@@ -58,16 +58,13 @@ public class Paycheck implements payroll {
 	public double totalPay () {
 		double payValue = regularPay() + overTimepay();
 
-		String message = String.format("Total Pay: %f", payValue);
+		String message = String.format("Total Pay: %.02f", payValue);
 
 		System.out.println(message);
 
 		return payValue;
 	}
-	public static void main (String[] arg) {
-
-		System.out.println("test");
-	}
+	
 
 }
 
